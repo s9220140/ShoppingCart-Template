@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/all.css">
+  <title>購物車 - 蔬果達人</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">SUPER VEGETA</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a>
+          </li>
+          <li class="nav-item"><a href="#"></a>
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">pages</a>
+              <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item item-color" href="product.html">Shop Details</a></li>
+                <li><a class="dropdown-item item-color" href="shopping-cart.html">Shopping Cart</a></li>
+                <li><a class="dropdown-item item-color" href="checkout.html">Checkout</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container checkout my-5">
+    <h3 class="fw-bold py-3 border-bottom">Billing Details</h3>
+    <form class="g-3 mt-3 needs-validation" novalidate>
+      <div class="row">
+        <!-- user form -->
+        <div class="col-lg-8 col-md-6">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="mb-3">
+
+                <label for="first-name" class="form-label">First Name<span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="first-name" placeholder="王" required>
+                <div class="invalid-feedback">Please Enter First Name</div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <label for="last-name" class="form-label">Last Name<span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="last-name" placeholder="小明" required>
+              <div class="invalid-feedback">Please Enter Last Name</div>
+              </div>
+              
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-3">
+
+                <label for="country" class="form-label">Country<span class="text-danger">*</span></label>
+                <select class="form-select" required>
+                  <option selected>請選擇國家</option>
+                  <option value="1">美國</option>
+                  <option value="2">大陸</option>
+                  <option value="3">日本</option>
+                </select>
+                <div class="invalid-feedback">Please Select Country</div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-3">
+
+                <label for="country" class="form-label">City<span class="text-danger">*</span></label>
+                <select class="form-select" required>
+                  <option selected>請選擇城市</option>
+                  <option value="1">台北</option>
+                  <option value="2">台中</option>
+                  <option value="3">台南</option>
+                  <option value="4">高雄</option>
+                </select>
+                <div class="invalid-feedback">Please Select City</div>
+              </div>
+            </div>
+
+            <div class="col-lg-10">
+              <div class="mb-3">
+                <label for="address" class="form-label">地址</label>
+                <input type="text" class="form-control" name="address" id="address" placeholder="請輸入地址" required>
+                <div class="invalid-feedback">Please Enter Address</div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="mb-3">
+
+                <label for="zip" class="form-label">郵遞區號</label>
+                <input type="text" class="form-control" id="zip">
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <label for="phone" class="form-label">電話<span class="text-danger">*</span></label>
+                <input type="tel" class="form-control" name="phone" id="phone" placeholder="0912345678" required>
+                <div class="invalid-feedback">Please Enter Phone Number</div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email<span class="text-danger">*</span></label>
+                <input type="tel" class="form-control" name="email" id="email" placeholder="hex@gmail.com" required>
+                <div class="invalid-feedback">Please Email Address</div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="note" class="form-label">給賣家的話</label>
+                <input type="text" class="form-control" name="note" id="note" placeholder="商品的規格或其他注意事項....">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- money content -->
+        <div class="col-lg-4 col-md-6">
+          <div class="checkout-content bg-light p-3">
+            <h3 class="fw-bold mx-3 pb-3 border-bottom">Your Order</h3>
+            <div class="d-flex justify-content-between py-2 mx-3">
+              <h4>Products</h4>
+              <span>Total</span>
+            </div>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between bg-light border-0">
+                Vegetable’s Package
+                <strong>$75.99</strong>
+              </li>
+              <li class="list-group-item d-flex justify-content-between bg-light border-0">
+                Fresh Vegetable
+                <strong>$151.99</strong>
+              </li>
+              <li class="list-group-item d-flex justify-content-between bg-light border-0">
+                Organic Bananas
+                <strong>$53.99</strong>
+              </li>
+            </ul>
+
+            <div class="d-flex justify-content-between mx-3 py-3 border-top border-bottom">
+              <h4>Subtotal</h4>
+              <span>$750.99</span>
+            </div>
+            <div class="d-flex justify-content-between mx-3 py-3 border-bottom">
+              <h4>Total</h4>
+              <strong class="h4 text-danger">$750.99</strong>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-color btn-lg">確認付款</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </form>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.5/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+  <script src="js/all.js"></script>
+</body>
+
+</html>

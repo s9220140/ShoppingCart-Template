@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/all.css">
+  <title>蔬果達人</title>
+</head>
+
+<body class="bg-light">
+  <a class="go-top" href="#"><i class="fas fa-2x fa-arrow-alt-circle-up"></i></a>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">SUPER VEGETA</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a>
+          </li>
+          <li class="nav-item"><a href="#"></a>
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">pages</a>
+              <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item item-color" href="product.html">Shop Details</a></li>
+                <li><a class="dropdown-item item-color" href="shopping-cart.html">Shopping Cart</a></li>
+                <li><a class="dropdown-item item-color" href="checkout.html">Checkout</a></li>
+              </ul>
+            </div>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="d-flex justify-content-end me-4">
+    <button type="button" class="btn btn-secondary position-relative" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        2
+        <span class="visually-hidden">unread messages</span>
+      </span>
+    </button>
+    <div class="dropdown-menu dropdown-menu-custom p-3">
+      <h5 class="fw-bold">
+        已選擇商品
+      </h5>
+      <table class="table table-hover">
+        <tbody>
+          <tr>
+            <td><a href="#" data-bs-toggle="modal" data-bs-target="#removeModal" data-title="烤肉大餐" data-num="10"><i
+                  class="fas fa-minus-circle text-danger me-2"></i>烤肉大餐</a></td>
+            <td>10個</td>
+            <td>$5200</td>
+          </tr>
+          <tr>
+            <td><a href="#" data-bs-toggle="modal" data-bs-target="#removeModal" data-title="新鮮魚貨" data-num="5"><i
+                  class="fas fa-minus-circle text-danger me-2"></i>新鮮魚貨</a></td>
+            <td>5個</td>
+            <td>$8880</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="d-grid gap-2">
+        <button type="submit" class="btn btn-primary"><i class="fas fa-shopping-cart me-2"></i>結帳去</button>
+      </div>
+    </div>
+
+  </div>
+  <div class="jumbotron jumbotron-bg text-dark text-center d-flex flex-column justify-content-end">
+    <div class="bg-lighter">
+      <h1 class="display-3 fw-bold">Vegetable<br>
+        100% Organic</h1>
+      <p class="lead">新鮮蔬果</p>
+      <hr class="my-2">
+      <p>自由挑選和提供寄送服務</p>
+    </div>
+    <p class="lead">
+      <a class="btn shop-bg text-white btn-lg mt-2" href="" role="button">SHOP NOW</a>
+    </p>
+  </div>
+
+  <div class="main-page container py-4 my-3 bg-light ">
+    <div class="row">
+      <div class="col-md-12 col-lg-2">
+        <div class="nav flex-column nav-pills me-3 my-1" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <button class="nav-link nav-link-custom active" id="v-pills-meat-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-meat" type="button" role="tab">新鮮肉品</button>
+          <button class="nav-link nav-link-custom" id="v-pills-green-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-green" type="button" role="tab">精緻蔬菜</button>
+          <button class="nav-link nav-link-custom" id="v-pills-fruit-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-fruit" type="button" role="tab">新鮮水果</button>
+          <button class="nav-link nav-link-custom" id="v-pills-seafood-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-seafood" type="button" role="tab">當地海產</button>
+        </div>
+
+      </div>
+      <div class="col-md-12 col-lg-10">
+        <div class="input-group mb-3 my-1">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>All Categories</option>
+            <option value="1">肉類</option>
+            <option value="2">蔬菜</option>
+            <option value="3">水果</option>
+            <option value="3">海鮮</option>
+          </select>
+          <input type="text" class="form-control" placeholder="搜尋你想要的商品..." aria-label="Recipient's username"
+            aria-describedby="basic-addon2">
+          <button type="button" class="btn btn-warning">Search</button>
+        </div>
+        <div class="tab-content" id="v-pills-tabContent">
+          <div class="tab-pane fade show active" id="v-pills-meat" role="tabpanel">
+            <div class="row my-3">
+              <div class="col-sm-6 col-md-6 col-lg-4 my-2">
+                <div class="card bg-light">
+                  <img class="img-fluid item-img-height"
+                    src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWVhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                  <div class="card-body bg-lighter card-body-custom text-center">
+                    <h5 class="card-title">Crab Pool Security</h5>
+                    <strong>$30.00</strong>
+                  </div>
+                  <div class="card-footer text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-outline-danger border-end-0">
+                        <i class="far fa-heart"></i></button>
+                      <button type="button" class="btn btn-outline-primary"><i
+                          class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 my-2">
+                <div class="card bg-light">
+                  <img class="img-fluid item-img-height"
+                    src="https://images.unsplash.com/photo-1558030006-450675393462?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWVhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                  <div class="card-body bg-lighter card-body-custom text-center">
+                    <h5 class="card-title">Crab Pool Security</h5>
+                    <strong>$30.00</strong>
+                  </div>
+                  <div class="card-footer text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-outline-danger border-end-0">
+                        <i class="far fa-heart"></i></button>
+                      <button type="button" class="btn btn-outline-primary"><i
+                          class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 my-2">
+                <div class="card bg-light">
+                  <img class="img-fluid item-img-height"
+                    src="https://images.unsplash.com/photo-1551028150-64b9f398f678?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWVhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                  <div class="card-body bg-lighter card-body-custom text-center">
+                    <h5 class="card-title">Crab Pool Security</h5>
+                    <strong>$30.00</strong>
+                  </div>
+                  <div class="card-footer text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-outline-danger border-end-0"><i
+                          class="far fa-heart"></i></button>
+                      <button type="button" class="btn btn-outline-primary"><i
+                          class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 my-2">
+                <div class="card bg-light">
+                  <img class="img-fluid item-img-height"
+                    src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWVhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                  <div class="card-body bg-lighter card-body-custom text-center">
+                    <h5 class="card-title">Crab Pool Security</h5>
+                    <strong>$30.00</strong>
+                  </div>
+                  <div class="card-footer text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-outline-danger border-end-0"><i
+                          class="far fa-heart"></i></button>
+                      <button type="button" class="btn btn-outline-primary"><i
+                          class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 my-2">
+                <div class="card bg-light">
+                  <img class="img-fluid item-img-height"
+                    src="https://images.unsplash.com/photo-1547050605-2f268cd5daf0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWVhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                  <div class="card-body bg-lighter card-body-custom text-center">
+                    <h5 class="card-title">Crab Pool Security</h5>
+                    <strong>$30.00</strong>
+                  </div>
+                  <div class="card-footer text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-outline-danger border-end-0"><i
+                          class="far fa-heart"></i></button>
+                      <button type="button" class="btn btn-outline-primary"><i
+                          class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 my-2">
+                <div class="card bg-light">
+                  <img class="img-fluid item-img-height"
+                    src="https://images.unsplash.com/photo-1628543108325-1c27cd7246b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG1lYXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                  <div class="card-body bg-lighter card-body-custom text-center">
+                    <h5 class="card-title">Crab Pool Security</h5>
+                    <strong>$30.00</strong>
+                  </div>
+                  <div class="card-footer text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-outline-danger border-end-0"><i
+                          class="far fa-heart"></i></button>
+                      <button type="button" class="btn btn-outline-primary"><i
+                          class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="v-pills-green" role="tabpanel">
+            <div class="row my-3">
+              <div class="col-sm-6 col-md-6 col-lg-4 my-2">
+                <div class="card bg-light">
+                  <img class="img-fluid item-img-height"
+                    src="https://images.unsplash.com/photo-1510627498534-cf7e9002facc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fHZlZ2V0YWJsZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                  <div class="card-body bg-lighter card-body-custom text-center">
+                    <h5 class="card-title">Crab Pool Security</h5>
+                    <strong>$30.00</strong>
+                  </div>
+                  <div class="card-footer text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-outline-danger border-end-0"><i
+                          class="far fa-heart"></i></button>
+                      <button type="button" class="btn btn-outline-primary"><i
+                          class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 my-2">
+                <div class="card bg-light">
+                  <img class="img-fluid item-img-height"
+                    src="https://images.unsplash.com/photo-1590868309235-ea34bed7bd7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fHZlZ2V0YWJsZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                  <div class="card-body bg-lighter card-body-custom text-center">
+                    <h5 class="card-title">Crab Pool Security</h5>
+                    <strong>$30.00</strong>
+                  </div>
+                  <div class="card-footer text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-outline-danger border-end-0"><i
+                          class="far fa-heart"></i></button>
+                      <button type="button" class="btn btn-outline-primary"><i
+                          class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 my-2">
+                <div class="card bg-light">
+                  <img class="img-fluid item-img-height"
+                    src="https://images.unsplash.com/photo-1594282486756-06f49bb34c05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fHZlZ2V0YWJsZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                  <div class="card-body bg-lighter card-body-custom text-center">
+                    <h5 class="card-title">Crab Pool Security</h5>
+                    <strong>$30.00</strong>
+                  </div>
+                  <div class="card-footer text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-outline-danger border-end-0"><i
+                          class="far fa-heart"></i></button>
+                      <button type="button" class="btn btn-outline-primary"><i
+                          class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 my-2">
+                <div class="card bg-light">
+                  <img class="img-fluid item-img-height"
+                    src="https://images.unsplash.com/photo-1553536645-f83758b55d23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHZlZ2V0YWJsZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                  <div class="card-body bg-lighter card-body-custom text-center">
+                    <h5 class="card-title">Crab Pool Security</h5>
+                    <strong>$30.00</strong>
+                  </div>
+                  <div class="card-footer text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-outline-danger border-end-0"><i
+                          class="far fa-heart"></i></button>
+                      <button type="button" class="btn btn-outline-primary"><i
+                          class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 my-2">
+                <div class="card bg-light">
+                  <img class="img-fluid item-img-height"
+                    src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fHZlZ2V0YWJsZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                  <div class="card-body bg-lighter card-body-custom text-center">
+                    <h5 class="card-title">Crab Pool Security</h5>
+                    <strong>$30.00</strong>
+                  </div>
+                  <div class="card-footer text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-outline-danger border-end-0"><i
+                          class="far fa-heart"></i></button>
+                      <button type="button" class="btn btn-outline-primary"><i
+                          class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 my-2">
+                <div class="card bg-light">
+                  <img class="img-fluid item-img-height"
+                    src="https://images.unsplash.com/photo-1591586116988-62fe65164f8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fHZlZ2V0YWJsZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                  <div class="card-body bg-lighter card-body-custom text-center">
+                    <h5 class="card-title">Crab Pool Security</h5>
+                    <strong>$30.00</strong>
+                  </div>
+                  <div class="card-footer text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-outline-danger border-end-0"><i
+                          class="far fa-heart"></i></button>
+                      <button type="button" class="btn btn-outline-primary"><i
+                          class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="v-pills-fruit" role="tabpanel">
+            <div class="row my-3">
+              <div class="col-sm-6 col-md-6 col-lg-4 my-2">
+                <div class="card bg-light">
+                  <img class="img-fluid item-img-height"
+                    src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnJ1aXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                  <div class="card-body bg-lighter card-body-custom text-center">
+                    <h5 class="card-title">Crab Pool Security</h5>
+                    <strong>$30.00</strong>
+                  </div>
+                  <div class="card-footer text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-outline-danger border-end-0"><i
+                          class="far fa-heart"></i></button>
+                      <button type="button" class="btn btn-outline-primary"><i
+                          class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 my-2">
+                <div class="card bg-light">
+                  <img class="img-fluid item-img-height"
+                    src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJ1aXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                  <div class="card-body bg-lighter card-body-custom text-center">
+                    <h5 class="card-title">Crab Pool Security</h5>
+                    <strong>$30.00</strong>
+                  </div>
+                  <div class="card-footer text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-outline-danger border-end-0"><i
+                          class="far fa-heart"></i></button>
+                      <button type="button" class="btn btn-outline-primary"><i
+                          class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 my-2">
+                <div class="card bg-light">
+                  <img class="img-fluid item-img-height"
+                    src="https://images.unsplash.com/photo-1557800636-894a64c1696f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZnJ1aXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                  <div class="card-body bg-lighter card-body-custom text-center">
+                    <h5 class="card-title">Crab Pool Security</h5>
+                    <strong>$30.00</strong>
+                  </div>
+                  <div class="card-footer text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-outline-danger border-end-0"><i
+                          class="far fa-heart"></i></button>
+                      <button type="button" class="btn btn-outline-primary"><i
+                          class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 my-2">
+                <div class="card bg-light">
+                  <img class="img-fluid item-img-height"
+                    src="https://images.unsplash.com/photo-1528825871115-3581a5387919?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZnJ1aXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                  <div class="card-body bg-lighter card-body-custom text-center">
+                    <h5 class="card-title">Crab Pool Security</h5>
+                    <strong>$30.00</strong>
+                  </div>
+                  <div class="card-footer text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-outline-danger border-end-0"><i
+                          class="far fa-heart"></i></button>
+                      <button type="button" class="btn btn-outline-primary"><i
+                          class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 my-2">
+                <div class="card bg-light">
+                  <img class="img-fluid item-img-height"
+                    src="https://images.unsplash.com/photo-1528821128474-27f963b062bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGZydWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                  <div class="card-body bg-lighter card-body-custom text-center">
+                    <h5 class="card-title">Crab Pool Security</h5>
+                    <strong>$30.00</strong>
+                  </div>
+                  <div class="card-footer text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-outline-danger border-end-0"><i
+                          class="far fa-heart"></i></button>
+                      <button type="button" class="btn btn-outline-primary"><i
+                          class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 my-2">
+                <div class="card bg-light">
+                  <img class="img-fluid item-img-height"
+                    src="https://images.unsplash.com/photo-1600423115367-87ea7661688f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGZydWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                  <div class="card-body bg-lighter card-body-custom text-center">
+                    <h5 class="card-title">Crab Pool Security</h5>
+                    <strong>$30.00</strong>
+                  </div>
+                  <div class="card-footer text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-outline-danger border-end-0"><i
+                          class="far fa-heart"></i></button>
+                      <button type="button" class="btn btn-outline-primary"><i
+                          class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="v-pills-seafood" role="tabpanel">
+            <div class="row my-3">
+              <div class="col-sm-6 col-md-6 col-lg-4 my-2">
+                <div class="card bg-light">
+                  <img class="img-fluid item-img-height"
+                    src="https://images.unsplash.com/photo-1559742811-822873691df8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2VhZm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                  <div class="card-body bg-lighter card-body-custom text-center">
+                    <h5 class="card-title">Crab Pool Security</h5>
+                    <strong>$30.00</strong>
+                  </div>
+                  <div class="card-footer text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-outline-danger border-end-0"><i
+                          class="far fa-heart"></i></button>
+                      <button type="button" class="btn btn-outline-primary"><i
+                          class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 my-2">
+                <div class="card bg-light">
+                  <img class="img-fluid item-img-height"
+                    src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2VhZm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                  <div class="card-body bg-lighter card-body-custom text-center">
+                    <h5 class="card-title">Crab Pool Security</h5>
+                    <strong>$30.00</strong>
+                  </div>
+                  <div class="card-footer text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-outline-danger border-end-0"><i
+                          class="far fa-heart"></i></button>
+                      <button type="button" class="btn btn-outline-primary"><i
+                          class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 my-2">
+                <div class="card bg-light">
+                  <img class="img-fluid item-img-height"
+                    src="https://images.unsplash.com/photo-1585545335512-1e43f40d4999?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c2VhZm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                  <div class="card-body bg-lighter card-body-custom text-center">
+                    <h5 class="card-title">Crab Pool Security</h5>
+                    <strong>$30.00</strong>
+                  </div>
+                  <div class="card-footer text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-outline-danger border-end-0"><i
+                          class="far fa-heart"></i></button>
+                      <button type="button" class="btn btn-outline-primary"><i
+                          class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 my-2">
+                <div class="card bg-light">
+                  <img class="img-fluid item-img-height"
+                    src="https://images.unsplash.com/photo-1576330383200-2bf325cfec52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNlYWZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                  <div class="card-body bg-lighter card-body-custom text-center">
+                    <h5 class="card-title">Crab Pool Security</h5>
+                    <strong>$30.00</strong>
+                  </div>
+                  <div class="card-footer text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-outline-danger border-end-0"><i
+                          class="far fa-heart"></i></button>
+                      <button type="button" class="btn btn-outline-primary"><i
+                          class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 my-2">
+                <div class="card bg-light">
+                  <img class="img-fluid item-img-height"
+                    src="https://images.unsplash.com/photo-1601314002592-b8734bca6604?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHNlYWZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                  <div class="card-body bg-lighter card-body-custom text-center">
+                    <h5 class="card-title">Crab Pool Security</h5>
+                    <strong>$30.00</strong>
+                  </div>
+                  <div class="card-footer text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-outline-danger border-end-0"><i
+                          class="far fa-heart"></i></button>
+                      <button type="button" class="btn btn-outline-primary"><i
+                          class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 my-2">
+                <div class="card bg-light">
+                  <img class="img-fluid item-img-height"
+                    src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHNlYWZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                  <div class="card-body bg-lighter card-body-custom text-center">
+                    <h5 class="card-title">Crab Pool Security</h5>
+                    <strong>$30.00</strong>
+                  </div>
+                  <div class="card-footer text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-outline-danger border-end-0"><i
+                          class="far fa-heart"></i></button>
+                      <button type="button" class="btn btn-outline-primary"><i
+                          class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  
+  <div class="container product-content py-4 my-3 bg-light">
+    <h2 class="text-center mb-3">產品頁面</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="product-image">
+          <img class="img-fluid"
+            src="https://images.unsplash.com/photo-1576330383200-2bf325cfec52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNlYWZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="detail">
+          <h2>新鮮漁貨</h2>
+          <div class="rading my-3">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>(18 reviews)</span>
+          </div>
+          <strong class="h3 price text-danger my-3">$50.00</strong>
+          <p class="my-3">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam
+            vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula
+            elementum sed sit amet dui. Proin eget tortor risus.</p>
+          <div class="btn-group">
+            <button class="btn btn-secondary" type="button">-</button>
+            <input type="text" class="form-control form-control-custom rounded-0" value="1"></input>
+            <button class="btn btn-secondary me-1" type="button">+</button>
+            <button type="button" class="btn btn-warning mx-1">ADD TO CART</button>
+            <button type="button" class="btn btn-outline-danger rounded-0 mx-1"><i class="far fa-heart"></i></button>
+          </div>
+          <hr class="my-5">
+          <div class="row">
+            <div class="col-md-3">
+              <dt>Availability</dt>
+            </div>
+            <div class="col-md-9">
+              <dd>In Stock</dd>
+            </div>
+            <div class="col-md-3">
+              <dt>shipping</dt>
+            </div>
+            <div class="col-md-9">
+              <dd> 01 day shipping. <span class="text-danger">Free pickup today</span></dd>
+            </div>
+            <div class="col-md-3">
+              <dt>Weight</dt>
+            </div>
+            <div class="col-md-9">
+              <dd>0.5 kg</dd>
+            </div>
+            <div class="col-md-3">
+              <dt>Share on</dt>
+            </div>
+            <div class="col-md-9">
+              <dd>
+                <div class="social-icon">
+                  <a class="me-3 shop-color" href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a class="me-3 shop-color" href="#"><i class="fab fa-twitter"></i></a>
+                  <a class="me-3 shop-color" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </dd>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul class="nav nav-tabs justify-content-center text-dark my-5">
+      <li class="nav-item">
+        <a class="nav-link active" href="#" data-bs-toggle="tab" data-bs-target="#description">Description</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#information">Information</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#reviews">Reviews (1)</a>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="home-tab">
+        <h3 class="my-3">Products Description</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ad numquam odio minus, quos amet saepe aspernatur
+          enim magni ratione ut reiciendis modi molestias. Odit neque sint nostrum quasi expedita.
+          Ex recusandae exercitationem, numquam itaque quam iusto, repudiandae dolorem sit soluta, nemo aspernatur quasi.
+          Excepturi vero cum velit beatae, accusantium architecto a nihil amet impedit maiores voluptate, in iure
+          voluptatum.</p>
+      </div>
+      <div class="tab-pane fade" id="information" role="tabpanel" aria-labelledby="profile-tab">
+        <h3 class="my-3">Products Information</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ad numquam odio minus, quos amet saepe aspernatur
+          enim magni ratione ut reiciendis modi molestias. Odit neque sint nostrum quasi expedita.
+          Ex recusandae exercitationem, numquam itaque quam iusto, repudiandae dolorem sit soluta, nemo aspernatur quasi.
+          Excepturi vero cum velit beatae, accusantium architecto a nihil amet impedit maiores voluptate, in iure
+          voluptatum.</p>
+      </div>
+      <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="contact-tab">
+        <h3 class="my-3">Products Reviews</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ad numquam odio minus, quos amet saepe aspernatur
+          enim magni ratione ut reiciendis modi molestias. Odit neque sint nostrum quasi expedita.
+          Ex recusandae exercitationem, numquam itaque quam iusto, repudiandae dolorem sit soluta, nemo aspernatur quasi.
+          Excepturi vero cum velit beatae, accusantium architecto a nihil amet impedit maiores voluptate, in iure
+          voluptatum.</p>
+      </div>
+    </div>
+    <h3 class="my-5 text-center">Related Product</h3>
+    <div class="row my-3">
+      <div class="col-md-6 col-lg-3 my-2">
+        <div class="card bg-light">
+          <img class="img-fluid item-img-height"
+            src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWVhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <div class="card-body bg-lighter card-body-custom text-center">
+            <h5 class="card-title">Crab Pool Security</h5>
+            <strong>$30.00</strong>
+          </div>
+          <div class="card-footer text-center">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-outline-danger border-end-0">
+                <i class="far fa-heart"></i>
+              </button>
+              <button type="button" class="btn btn-outline-primary"><i
+                  class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 my-2">
+        <div class="card bg-light">
+          <img class="img-fluid item-img-height"
+            src="https://images.unsplash.com/photo-1558030006-450675393462?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWVhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <div class="card-body bg-lighter card-body-custom text-center">
+            <h5 class="card-title">Crab Pool Security</h5>
+            <strong>$30.00</strong>
+          </div>
+          <div class="card-footer text-center">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-outline-danger border-end-0">
+                <i class="far fa-heart"></i>
+              </button>
+              <button type="button" class="btn btn-outline-primary"><i
+                  class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 my-2">
+        <div class="card bg-light">
+          <img class="img-fluid item-img-height"
+            src="https://images.unsplash.com/photo-1551028150-64b9f398f678?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWVhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <div class="card-body bg-lighter card-body-custom text-center">
+            <h5 class="card-title">Crab Pool Security</h5>
+            <strong>$30.00</strong>
+          </div>
+          <div class="card-footer text-center">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-outline-danger border-end-0">
+                <i class="far fa-heart"></i>
+              </button>
+              <button type="button" class="btn btn-outline-primary"><i
+                  class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 my-2">
+        <div class="card bg-light">
+          <img class="img-fluid item-img-height"
+            src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWVhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <div class="card-body bg-lighter card-body-custom text-center">
+            <h5 class="card-title">Crab Pool Security</h5>
+            <strong>$30.00</strong>
+          </div>
+          <div class="card-footer text-center">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-outline-danger border-end-0"><i class="far fa-heart"></i></button>
+              <button type="button" class="btn btn-outline-primary"><i
+                  class="fas fa-shopping-cart pe-2"></i>加入購物車</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="container shop-cart my-5">
+    <h2 class="text-center pb-3">SUPER VEGETA 結帳</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="alert alert-success rounded-pill text-center" role="alert">
+          1.購物車資料
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="alert alert-light rounded-pill text-center" role="alert">
+          2.輸入使用者資料
+        </div>
+      </div>
+      <div class="col-md-4">
+
+        <div class="alert alert-light rounded-pill text-center" role="alert">
+          3.完成
+        </div>
+      </div>
+    </div>
+    <div class="table-responsive-md my-3">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th width="2rem">#</th>
+            <th colspan="2">Products</th>
+            <th class="text-end">Price</th>
+            <th class="text-end">Quantity</th>
+            <th class="text-end">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td-center"><a class="text-danger" href="#" data-bs-toggle="modal" data-bs-target="#removeModal"
+                data-title="烤肉大餐" data-num="8"><i class="fas fa-minus-circle"></i></a></td>
+            <td width="10%">
+              <img class="img-fluid cart-item-image me-3"
+                src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWVhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+            </td>
+            <td class="td-center">烤肉特餐</td>
+            <td class="td-center text-end">
+              $99.00
+            </td>
+            <td class="td-center text-end">
+              <div class="btn-group">
+                <button class="btn btn-secondary" type="button">-</button>
+                <input type="text" class="form-control form-control-custom rounded-0" value="8"></input>
+                <button class="btn btn-secondary me-1" type="button">+</button>
+              </div>
+            </td>
+            <td class="td-center text-end">$49.00</td>
+
+          </tr>
+          <tr>
+            <td class="td-center"><a class="text-danger" href="#" data-bs-toggle="modal" data-bs-target="#removeModal"
+                data-title="烤肉大餐" data-num="10"><i class="fas fa-minus-circle"></i></a></td>
+            <td width="10%">
+              <img class="img-fluid cart-item-image me-3"
+                src="https://images.unsplash.com/photo-1558030006-450675393462?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWVhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+            </td>
+            <td class="td-center">烤肉特餐</td>
+            <td class="td-center text-end">
+              $55.00
+            </td>
+            <td class="td-center text-end">
+              <div class="btn-group">
+                <button class="btn btn-secondary" type="button">-</button>
+                <input type="text" class="form-control form-control-custom rounded-0" value="10"></input>
+                <button class="btn btn-secondary me-1" type="button">+</button>
+              </div>
+            </td>
+            <td class="td-center text-end">$80.00</td>
+
+          </tr>
+          <tr>
+            <td class="td-center"><a class="text-danger" href="#" data-bs-toggle="modal" data-bs-target="#removeModal"
+                data-title="烤肉大餐" data-num="20"><i class="fas fa-minus-circle"></i></a></td>
+            <td width="10%">
+              <img class="img-fluid cart-item-image me-3"
+                src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWVhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+            </td>
+            <td class="td-center">烤肉特餐</td>
+            <td class="td-center text-end">
+              $55.00
+            </td>
+            <td class="td-center text-end">
+              <div class="btn-group">
+                <button class="btn btn-secondary" type="button">-</button>
+                <input type="text" class="form-control form-control-custom rounded-0" value="20"></input>
+                <button class="btn btn-secondary me-1" type="button">+</button>
+              </div>
+            </td>
+            <td class="td-center text-end">$110.00</td>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <h3 class="my-3 fw-bold">Discount Codes</h3>
+        <div class="input-group w-50">
+          <input class="form-control" type="text" name="" placeholder="請輸入折扣碼" aria-label="Recipient's "
+            aria-describedby="my-addon">
+          <div class="input-group-append">
+            <button type="button" class="btn btn-outline-secondary">使用折扣</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="checkout bg-light my-3 p-3">
+          <h3 class="fw-bold">Cart Total</h3>
+          <div class="d-flex justify-content-between align-items-center border-bottom py-2">
+            <h5>Subtotal</h5>
+            <span class="text-danger h4">$454.98</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center border-bottom py-2">
+            <h5>Total</h5>
+            <span class="text-danger h4 ">$454.98</span>
+          </div>
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary btn-lg my-3" type="button">結帳</button>
+            <button class="btn btn-outline-secondary btn-lg my-3" type="button">繼續購物</button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="container checkout my-5">
+    <h2 class="text-center pb-3">結帳頁面</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="alert alert-light rounded-pill text-center" role="alert">
+          1.購物車資料
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="alert alert-success rounded-pill text-center" role="alert">
+          2.輸入使用者資料
+        </div>
+      </div>
+      <div class="col-md-4">
+
+        <div class="alert alert-light rounded-pill text-center" role="alert">
+          3.完成
+        </div>
+      </div>
+    </div>
+    <h3 class="fw-bold py-3 border-bottom text-center">Billing Details</h3>
+    <form class="g-3 mt-3 needs-validation" novalidate>
+      <div class="row">
+        <!-- user form -->
+        <div class="col-lg-8 col-md-6">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="mb-3">
+
+                <label for="first-name" class="form-label">First Name<span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="first-name" placeholder="王" required>
+                <div class="invalid-feedback">Please Enter First Name</div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <label for="last-name" class="form-label">Last Name<span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="last-name" placeholder="小明" required>
+              <div class="invalid-feedback">Please Enter Last Name</div>
+              </div>
+              
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-3">
+
+                <label for="country" class="form-label">Country<span class="text-danger">*</span></label>
+                <select class="form-select" required>
+                  <option selected>請選擇國家</option>
+                  <option value="1">美國</option>
+                  <option value="2">大陸</option>
+                  <option value="3">日本</option>
+                </select>
+                <div class="invalid-feedback">Please Select Country</div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-3">
+
+                <label for="country" class="form-label">City<span class="text-danger">*</span></label>
+                <select class="form-select" required>
+                  <option selected>請選擇城市</option>
+                  <option value="1">台北</option>
+                  <option value="2">台中</option>
+                  <option value="3">台南</option>
+                  <option value="4">高雄</option>
+                </select>
+                <div class="invalid-feedback">Please Select City</div>
+              </div>
+            </div>
+
+            <div class="col-lg-10">
+              <div class="mb-3">
+                <label for="address" class="form-label">地址</label>
+                <input type="text" class="form-control" name="address" id="address" placeholder="請輸入地址" required>
+                <div class="invalid-feedback">Please Enter Address</div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="mb-3">
+
+                <label for="zip" class="form-label">郵遞區號</label>
+                <input type="text" class="form-control" id="zip">
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <label for="phone" class="form-label">電話<span class="text-danger">*</span></label>
+                <input type="tel" class="form-control" name="phone" id="phone" placeholder="0912345678" required>
+                <div class="invalid-feedback">Please Enter Phone Number</div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email<span class="text-danger">*</span></label>
+                <input type="tel" class="form-control" name="email" id="email" placeholder="hex@gmail.com" required>
+                <div class="invalid-feedback">Please Email Address</div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="note" class="form-label">給賣家的話</label>
+                <input type="text" class="form-control" name="note" id="note" placeholder="商品的規格或其他注意事項....">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- money content -->
+        <div class="col-lg-4 col-md-6">
+          <div class="checkout-content bg-light p-3">
+            <h3 class="fw-bold mx-3 pb-3 border-bottom">Your Order</h3>
+            <div class="d-flex justify-content-between py-2 mx-3">
+              <h4>Products</h4>
+              <span>Total</span>
+            </div>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between bg-light border-0">
+                Vegetable’s Package
+                <strong>$75.99</strong>
+              </li>
+              <li class="list-group-item d-flex justify-content-between bg-light border-0">
+                Fresh Vegetable
+                <strong>$151.99</strong>
+              </li>
+              <li class="list-group-item d-flex justify-content-between bg-light border-0">
+                Organic Bananas
+                <strong>$53.99</strong>
+              </li>
+            </ul>
+
+            <div class="d-flex justify-content-between mx-3 py-3 border-top border-bottom">
+              <h4>Subtotal</h4>
+              <span>$750.99</span>
+            </div>
+            <div class="d-flex justify-content-between mx-3 py-3 border-bottom">
+              <h4>Total</h4>
+              <strong class="h4 text-danger">$750.99</strong>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-color btn-lg">確認付款</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </form>
+  </div>
+  <hr>
+
+
+  <div class="container shop-cart my-5">
+    <h2 class="text-center pb-3">已完成購物</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="alert alert-light rounded-pill text-center" role="alert">
+          1.購物車資料
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="alert alert-light rounded-pill text-center" role="alert">
+          2.輸入使用者資料
+        </div>
+      </div>
+      <div class="col-md-4">
+
+        <div class="alert alert-success rounded-pill text-center" role="alert">
+          3.完成
+        </div>
+      </div>
+    </div>
+    <div class="table-responsive-md">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th colspan="2">Products</th>
+            <th class="text-end">Price</th>
+            <th class="text-end">Quantity</th>
+            <th class="text-end">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            
+            <td width="10%">
+              <img class="img-fluid cart-item-image me-3"
+                src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWVhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+            </td>
+            <td class="td-center">烤肉特餐</td>
+            <td class="td-center text-end">
+              $99.00
+            </td>
+            <td class="td-center text-end">
+              8個
+            </td>
+            <td class="td-center text-end">$49.00</td>
+
+          </tr>
+          <tr>
+            
+            <td width="10%">
+              <img class="img-fluid cart-item-image me-3"
+                src="https://images.unsplash.com/photo-1558030006-450675393462?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWVhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+            </td>
+            <td class="td-center">烤肉特餐</td>
+            <td class="td-center text-end">
+              $55.00
+            </td>
+            <td class="td-center text-end">
+              10個
+            </td>
+            <td class="td-center text-end">$80.00</td>
+
+          </tr>
+          <tr>
+            
+            <td width="10%">
+              <img class="img-fluid cart-item-image me-3"
+                src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWVhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+            </td>
+            <td class="td-center">烤肉特餐</td>
+            <td class="td-center text-end">
+              $55.00
+            </td>
+            <td class="td-center text-end">
+              20個
+            </td>
+            <td class="td-center text-end">$110.00</td>
+
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="text-end" colspan="4">Total</td>
+            <td class="text-end text-danger h3" colspan="4">$454.98</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <div class="d-flex justify-content-end">
+      <button type="button" class="btn btn-outline-primary btn-lg my-3">繼續購物</button>
+    </div>
+  </div>
+
+  <!-- modal -->
+  <div class="modal fade" id="removeModal" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="modal-num">數量:</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-danger">確認刪除</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  <script src="js/all.js"></script>
+</body>
+
+</html>

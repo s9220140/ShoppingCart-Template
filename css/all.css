@@ -1,0 +1,116 @@
+.dropdown-menu-bg {
+  background-color: #000;
+}
+.item-color {
+  color: #fff;
+}
+.item-color:hover {
+  color: #3fcc67;
+  background-color: transparent;
+  transition: color 0.3s;
+}
+.jumbotron-bg {
+  background: url(https://images.unsplash.com/photo-1592201426550-83c4be24a0a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80);
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+}
+
+.bg-lighter {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.shop-color {
+  color: #3fcc67;
+}
+.shop-bg {
+  background-color: #3fcc67;
+}
+
+.card-body-custom {
+  padding: 1rem 0.5rem;
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+.card:hover {
+  box-shadow: 2px 3px 3px #ccc;
+  transition: box-shadow 0.3s;
+}
+
+.item-img-height {
+  max-width: 22rem;
+  height: 18rem;
+}
+
+@media (max-width: 576px) {
+  .item-img-height {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.nav-link-custom.active {
+  background: #3fcc67 !important;
+}
+
+.fa-star,
+.fa-star-half-alt {
+  color: rgb(228, 170, 34);
+}
+
+.form-control-custom {
+  width: 3rem;
+  text-align: center;
+  padding: 0;
+}
+
+@media (max-width: 992px) {
+  .title-line {
+    display: none;
+  }
+}
+
+.cart-item-image {
+  max-width: 100px;
+  height: 100px;
+}
+
+.td-center {
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .input-group {
+    width: 100% !important;
+  }
+}
+
+.btn-color {
+  background-color: #3fcc67;
+  color: #fff;
+}
+
+.dropdown-menu-custom {
+  min-width: 16rem;
+}
+
+@media (max-width: 960px) {
+  .main-page {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .item-img-height {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.go-top {
+  display: none;
+  position: fixed;
+  right: 3px;
+  bottom: 3px;
+}

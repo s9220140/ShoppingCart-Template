@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/all.css">
+  <title>購物車 - 蔬果達人</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">SUPER VEGETA</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a>
+          </li>
+          <li class="nav-item"><a href="#"></a>
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">pages</a>
+              <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item item-color" href="product.html">Shop Details</a></li>
+                <li><a class="dropdown-item item-color" href="shopping-cart.html">Shopping Cart</a></li>
+                <li><a class="dropdown-item item-color" href="checkout.html">Checkout</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container shop-cart my-5">
+    <div class="table-responsive-md">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th width="2rem">#</th>
+            <th colspan="2">Products</th>
+            <th class="text-end">Price</th>
+            <th class="text-end">Quantity</th>
+            <th class="text-end">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td-center"><a class="text-danger" href="#" data-bs-toggle="modal" data-bs-target="#removeModal" data-title="烤肉大餐" data-num="8"><i class="fas fa-minus-circle"></i></a></td>
+            <td width="10%">
+              <img class="img-fluid cart-item-image me-3"
+                src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWVhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+            </td>
+            <td class="td-center">烤肉特餐</td>
+            <td class="td-center text-end">
+              $99.00
+            </td>
+            <td class="td-center text-end">
+              <div class="btn-group">
+                <button class="btn btn-secondary" type="button">-</button>
+                <input type="text" class="form-control form-control-custom rounded-0" value="8"></input>
+                <button class="btn btn-secondary me-1" type="button">+</button>
+              </div>
+            </td>
+            <td class="td-center text-end">$49.00</td>
+
+          </tr>
+          <tr>
+            <td class="td-center"><a class="text-danger" href="#" data-bs-toggle="modal" data-bs-target="#removeModal" data-title="烤肉大餐" data-num="10"><i class="fas fa-minus-circle"></i></a></td>
+            <td width="10%">
+              <img class="img-fluid cart-item-image me-3"
+                src="https://images.unsplash.com/photo-1558030006-450675393462?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bWVhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+            </td>
+            <td class="td-center">烤肉特餐</td>
+            <td class="td-center text-end">
+              $55.00
+            </td>
+            <td class="td-center text-end">
+              <div class="btn-group">
+                <button class="btn btn-secondary" type="button">-</button>
+                <input type="text" class="form-control form-control-custom rounded-0" value="10"></input>
+                <button class="btn btn-secondary me-1" type="button">+</button>
+              </div>
+            </td>
+            <td class="td-center text-end">$80.00</td>
+
+          </tr>
+          <tr>
+            <td class="td-center"><a class="text-danger" href="#" data-bs-toggle="modal" data-bs-target="#removeModal" data-title="烤肉大餐" data-num="20"><i class="fas fa-minus-circle"></i></a></td>
+            <td width="10%">
+              <img class="img-fluid cart-item-image me-3"
+                src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWVhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+            </td>
+            <td class="td-center">烤肉特餐</td>
+            <td class="td-center text-end">
+              $55.00
+            </td>
+            <td class="td-center text-end">
+              <div class="btn-group">
+                <button class="btn btn-secondary" type="button">-</button>
+                <input type="text" class="form-control form-control-custom rounded-0" value="20"></input>
+                <button class="btn btn-secondary me-1" type="button">+</button>
+              </div>
+            </td>
+            <td class="td-center text-end">$110.00</td>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <div class="row">
+      <div class="col-lg-6">
+        <h3 class="my-3 fw-bold">Discount Codes</h3>
+        <div class="input-group w-50">
+          <input class="form-control" type="text" name="" placeholder="請輸入折扣碼" aria-label="Recipient's "
+            aria-describedby="my-addon">
+          <div class="input-group-append">
+            <button type="button" class="btn btn-outline-secondary">使用折扣</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="checkout bg-light my-3 p-3">
+          <h3 class="fw-bold">Cart Total</h3>
+          <div class="d-flex justify-content-between align-items-center border-bottom py-2">
+            <h5>Subtotal</h5>
+            <span class="text-danger h4">$454.98</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center border-bottom py-2">
+            <h5>Total</h5>
+            <span class="text-danger h4 ">$454.98</span>
+          </div>
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary btn-lg my-3" type="button">結帳</button>
+            <button class="btn btn-outline-secondary btn-lg my-3" type="button">繼續購物</button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+    <!-- modal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="modal-num">數量:</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-danger">確認刪除</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  <script src="js/all.js"></script>
+</body>
+
+</html>
